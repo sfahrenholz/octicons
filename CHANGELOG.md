@@ -1,3 +1,27 @@
+# 9.1.1
+
+### :bug: Bug Fix
+
+- [x] renamed the original shield icon to `shield-lock` https://github.com/primer/octicons/issues/323 @ashygee
+- [x] test for duplicate icons https://github.com/primer/octicons/pull/322 @jonrohan
+
+# 9.1.0
+
+### 🚀 New features
+
+- [x] Adding skip icon https://github.com/primer/octicons/pull/318 @ashygee
+
+# 9.0.0
+
+### 💥 Breaking changes
+- [x] Rename `octicons` to `@primer/octicons` https://github.com/primer/octicons/pull/311
+- [x] Rename `@githubprimer/octicons-react` to `@primer/octicons-react` https://github.com/primer/octicons/pull/311
+
+### 🚀 New features
+
+- [x] Adding a shield icon https://github.com/primer/octicons/pull/310 @ashygee @donokuda
+- [x] Adding new repo icons https://github.com/primer/octicons/issues/316 @superbryntendo
+
 # 8.5.0
 
 - a11y aria-hidden update from @muan https://github.com/primer/octicons/pull/295
