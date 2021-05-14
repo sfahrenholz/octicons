@@ -1,5 +1,5 @@
 *.gem
-*.lock
+/package-lock.json
 *.log
 .DS_Store
 .bundle
@@ -9,3 +9,10 @@ vendor
 
 # Ignore build/export artifacts
 lib/**/build/
+
+# Gatsby
+public
+.cache
+
+# Now
+.now

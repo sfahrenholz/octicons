@@ -13,6 +13,7 @@ Gem::Specification.new do |s|
 
   s.require_paths = ["lib"]
 
-  s.add_dependency "octicons", "9.1.1"
-  s.add_dependency "rails"
+  s.add_dependency "octicons", "14.0.0"
+  s.add_dependency "railties"
+  s.add_dependency "actionview"
 end

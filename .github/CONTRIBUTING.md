@@ -1,70 +1,139 @@
-# Adding or Updating icons
+# Octicons Contribution Guidelines
 
-If you plan to update an icon and/or add a new icon follow these steps. These steps will be the same for core primer members and contributors.
+Thank you for your interest in contributing to Octicons! We are currently only accepting submissions from GitHub staff and only include icons that are used in the GitHub UI.
 
-Complete steps 1 - 3 and notify us of your changes, either with a pull request or an issue describing your changes. Screenshots welcome! 🎉
+## Icon request process
 
-## Step 1, Duplicate:
+### 1. Icon request is made
 
-The first step is to make a copy of the [master Octicons file][master-octicons] to your drafts folder. You can do this from the dropdown menu, select "Duplicate to your drafts".
+- Icon requests are made using the [icon request template](https://github.com/github/primer/issues/new?assignees=ashygee&labels=octicon%2C+request&template=2-icon-request.md&title=%5BIcon+request%5D+) in the github/primer repo (visible to GitHub staff only).
+- Once received, the issue will be placed in the **❓ Icon requests (inbox)** column of the [Octicons project board](https://github.com/github/primer/projects/2)
+- Icons in the inbox will be triaged by a maintainer from the Octicons team. Maintainers should reply with a comment on the issue and then move the issue to the **💬 Responded** column of the Octicons [project board](https://github.com/github/primer/projects/2)
 
-[<img src="https://user-images.githubusercontent.com/54012/37802948-c10dca06-2de9-11e8-98c3-dd45cd561865.gif" width="400"/>](https://user-images.githubusercontent.com/54012/37802948-c10dca06-2de9-11e8-98c3-dd45cd561865.gif)
+### 2. Assigning icons
 
-## Step 2, Edit:
+- Each new icon request will initially be discussed async within our #octicons channel on Slack.
+  - If the icon requires further discussion or needs more context before assigning, a maintainer will leave a comment on the issue requesting more information from the original requestor and the issue will be moved to the **⚠️ To discuss** column of the Octicons [project board](https://github.com/github/primer/projects/2)
+  - If a currently existing icon can be used to clearly convey the correct metaphor, a suggestion will be made in the icon request issue and the issue will be moved to the **⚠️ To discuss** column of the Octicons [project board](https://github.com/github/primer/projects/2)
+  - If it is decided that a new icon needs to be created the issue will be moved to the **📫 To do** column of the Octicons [project board](https://github.com/github/primer/projects/2)
+- Icon requests will be assigned to a designer in the weekly Octicons sync held on Wednesdays
+  - Once an icon has been assigned, it's up to assigned designer to be responsible for communicating the icon's status
+  - Other designers are welcome to collaborate on any icons
 
-In your duplicate file, make proposed changes. In the example, we’ll make the GitHub logo red. It will also simplify things if you give your file a unique name e.g. _Octicons (Jon’s Changes)_.
+### 3. Icon design, review, and communication
 
-[<img src="https://user-images.githubusercontent.com/54012/37803022-14d1a0fe-2dea-11e8-862d-b7ef22c918cf.gif" width="400"/>](https://user-images.githubusercontent.com/54012/37803022-14d1a0fe-2dea-11e8-862d-b7ef22c918cf.gif)
+- Once design has been started on an icon, the request issue will be moved to the **✒️In Progress** column of the Octicons [project board](https://github.com/github/primer/projects/2)
+- Designers should design the icon in Figma and when ready for review, use the [Octicons Push plugin](https://www.figma.com/community/plugin/825432045044458754/Octicons-Push) to create a PR
+  - After a PR is created link to the PR in the icon request issue and move the issue to the **👁‍🗨 Ready for review** column of the Octicons [project board](https://github.com/github/primer/projects/2)
+  - All review communication will be contained within the PR
+  - PRs need approval from the icon requestor (stakeholder) and at least one designer on the octicons maintainer team
 
-## Step 3, Share:
-
-Make sure your duplicate file can be viewed by others. In the share menu "Anyone with link" should be set to "can view". Copy the link.
-
-[<img src="https://user-images.githubusercontent.com/54012/37803059-3ca54432-2dea-11e8-8c27-36c83a2dc5cb.gif" width="400"/>](https://user-images.githubusercontent.com/54012/37803059-3ca54432-2dea-11e8-8c27-36c83a2dc5cb.gif)
-
-## Step 4, Pull Request: _(Optional)_
-
-You can submit a pull request updating the `FIGMA_FILE_URL` configuration in the .github/[main.workflow](https://github.com/primer/octicons/blob/master/.github/main.workflow?short_path=dd94174#L41) with your Figma file. Doing so will generate alpha releases of [all the libraries that distribute Octicons](https://github.com/primer/octicons#libraries).
-
-If an icon was edited or added, you should see the before and after images directly in the PR. In addition, please describe your proposed changes in the PR's description.
-
-Once the build passes on your pull request, you should see statuses with all the alpha versions of the libraries. You can then use these to test your changes.
-
-[Here is an example pull request](https://github.com/primer/octicons/pull/206)
-
-[<img src="https://user-images.githubusercontent.com/54012/37811102-45ec2abc-2e15-11e8-8c1d-2d162ddcdad2.png" width="700"/>](https://user-images.githubusercontent.com/54012/37811102-45ec2abc-2e15-11e8-8c1d-2d162ddcdad2.png)
-
----
-
-# Maintainers accepting changes
-
-Once submitted changes have been agreed upon, these instructions will guide core primer team members in merging in those changes.
-
-## Step 1, Save:
-
-Save the contributor’s Figma file as a `.fig` file and open in Figma (it will automatically be imported into your Drafts)
+### 4. Icon request completed
+- When an icon request PR has been approved by both the requestor and a member of Octicons maintainer team, the icon request is moved to the **🔼 Push to repo** column of the Octicons [project board](https://github.com/github/primer/projects/2)
+- After a new release has been made, the new icons that were added will have their request issues moved to the **✔ Done** column
 
 
-## Step 2, Import:
+## Adding or updating an icon
 
-Drag and drop, or paste the updated or new icon from the contributer's file into the main Octicons Figma file. Make sure that the SVG only contains a single `path` and that it has relevant component keywords in Figma.
+Follow these steps to add or update an icon.
+
+### 1. Clone the repository
+
+```shell
+# Clone the repository
+git clone https://github.com/primer/octicons
+
+# Navigate to the newly cloned directory
+cd octicons
+```
+
+If you don't have [`write`](https://help.github.com/en/github/getting-started-with-github/access-permissions-on-github) access to the [primer/octicons](https://github.com/primer/octicons) repository, instead of cloning the repository directly, you'll need to [fork](http://help.github.com/fork-a-repo/) the project, clone your fork, and configure the remotes:
+
+```shell
+# Clone your fork of the repository
+git clone https://github.com/<your-username>/octicons
+
+# Navigate to the newly cloned directory
+cd octicons
+
+# Assign the original repo to a remote called "upstream"
+git remote add upstream https://github.com/primer/octicons
+```
+
+### 2. Create a new feature branch
+
+```shell
+git checkout -b <branch-name>
+```
+
+### 3. Add or update SVG files in the `/icons` directory
+
+### 4. Add or update keywords in `keywords.json`
+
+```diff
+{
+  "mark-github": ["octocat", "brand", "github", "logo"],
++ "your-icon": ["foo", "bar"]
+}
+```
+
+### 5. Commit and push changes
+
+```shell
+git add .
+git commit -m <message>
+git push
+```
+
+### 6. Create a pull request
+
+Use GitHub to [create a pull request](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request) for your branch. In your pull request description, be sure to mention where the icon will be used and any relevant timeline information.
+
+If everything looks good, a maintainer will approve and merge the pull request when appropriate. After the pull request is merged, your icon will be available in the next Octicons release.
+
+## Releasing changes
+
+Once submitted changes have been agreed upon, these instructions will guide maintainers through releasing changes.
+
+### 1. Create a release branch in the [primer/octicons](https://github.com/primer/octicons) repository.
+
+```shell
+git checkout -b release-x.y.z
+```
+
+In the context of Octicons, the version number is updated as follows:
+
+- Breaking changes to the library or workflow, renaming or removing an icon would all be considered a **major update**.
+- Adding a new icon would be considered a **minor update**.
+- Fixing an icon would be considered a **patch**.
+
+Reach out in the #design-systems Slack channel if you're unsure.
+
+### 2. Update the [CHANGELOG](https://github.com/primer/octicons/blob/main/CHANGELOG.md) describing the changes in this release.
+
+When adding changes, be sure to provide a link to any of the relevant PRs merged into the release.
+
+### 3. Update the version in code base
+
+Find and replace the version number of the current release with the version number of the new release. Exclude anything that does relate directly to the Octicons version. Examples of excluded items include `yargs-parser` and `testing-library_react`.
+
+### 4. Create a release PR
+
+When creating the release PR, include the changes written in the CHANGELOG in the description. We advise changing any bulleted item into a checkbox item. After each update is merged into the release PR, check each item as complete.
+
+### 5. Merge
+When all of the checks have passed and the release PR has been approved, merge the new release to the main branch.
+
+### 6. Draft new release
+- On the **Code** tab, click **Releases** in the repo sidebar.
+- Click **Draft a new release**.
+- Tag the release with the new version number (e.g. `v10.1.0`).
+- Title the release with the new version number and paste in the changes that were added to the CHANGELOG.
+- Click **Publish release**.
+
+**Example:**
+
+![image](https://user-images.githubusercontent.com/10384315/91103190-c6171e80-e61f-11ea-8396-7138996cff30.png)
 
 
-## Step 3, Add:
-
-Once the new changes have been added the new components to the master Octicons file, you can publish to the team library in Figma.
-
-
-## Step 4, Create a Release Branch in Octicons:
-
-After you've published the latest changes in the Figma file, create a release branch in the [Octicons repo](https://github.com/primer/octicons).
-
-Update the [CHANGELOG](https://github.com/primer/octicons/blob/master/CHANGELOG.md) with the new changes pertaining to this version.
-
-Once the CHANGELOG has been updated, run `npm version <newversion>`. This will update package.json with the new version, then update all the `lib/*` packages with the same version. If that runs smoothly, it should commit the changed files. Push that commit to your release branch.
-
-In the context of Octicons, significant changes to the library or workflow, or removing an icon would be considered a major update, adding a new icon would be considered a minor update, and fixing an icon would be considered a patch. Reach out in the #design-systems Slack channel if you're unsure!
-
-After, push up your branch and open a pull request into master.
-
-[master-octicons]: https://www.figma.com/file/FP7lqd1V00LUaT5zvdklkkZr/Octicons
+🎉 Congratulations! The new release has been published.

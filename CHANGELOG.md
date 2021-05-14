@@ -1,19 +1,387 @@
-# 9.1.1
+# Changelog
+
+## 14.0.0
+
+### 💥 Breaking changes
+
+- Remove `octoface` https://github.com/primer/octicons/pull/611 
+- Rename `git-fork-24` to `repo-forked-24` https://github.com/primer/octicons/pull/593 
+
+### 🚀 New Features
+
+- `number` https://github.com/primer/octicons/pull/592 
+- `hash` (previously `number`) https://github.com/primer/octicons/pull/592 
+- `diamond` https://github.com/primer/octicons/pull/616
+- `single-select` https://github.com/primer/octicons/pull/612
+- `rows` https://github.com/primer/octicons/pull/617
+- `columns` https://github.com/primer/octicons/pull/617
+- `issue-draft` https://github.com/primer/octicons/pull/614 
+
+### 💅 Enhancements
+
+- `issue-opened` https://github.com/primer/octicons/pull/614 
+- `issue-closed` https://github.com/primer/octicons/pull/614 
+
+### 🐛 Fixes
+
+- Fix 24px `arrow-up` icon  https://github.com/primer/octicons/pull/594 
+- Prevent clipping using `overflow: visible` https://github.com/primer/octicons/pull/607
+
+## 13.0.0
+
+### 🚀 New Features
+
+- `table` https://github.com/primer/octicons/pull/564
+- `person-add` https://github.com/primer/octicons/pull/573
+- `blocked` https://github.com/primer/octicons/pull/576
+- `duplicate` https://github.com/primer/octicons/pull/576
+- `dependabot`https://github.com/primer/octicons/pull/585
+- `codescan` https://github.com/primer/octicons/pull/588
+- `browser` https://github.com/primer/octicons/pull/575
+- `sidebar` icons https://github.com/primer/octicons/pull/569
+- `codespaces` https://github.com/primer/octicons/pull/587
+
+### 💥 Breaking changes
+
+- Remove 24px `insights` icon https://github.com/primer/octicons/pull/574
+- Remove 24px `copy` icon https://github.com/primer/octicons/pull/586
+
+### 💅 Enhancements
+
+- Use more explicit dependencies for Rails helper https://github.com/primer/octicons/pull/565
+
+### 🐛 Fixes
+
+- Fix `megaphone-16` https://github.com/primer/octicons/pull/554
+- Fix `circle` icon https://github.com/primer/octicons/pull/584
+
+## 12.1.0
+
+### React
+
+### 💅 Enhancements
+
+- Add icon-specific class names to each icon component https://github.com/primer/octicons/pull/453 @FloEdelmann
+- Add `fill` prop to each icon component https://github.com/primer/octicons/pull/551 @macno
+
+## 12.0.0
+
+### 🚀 New Features
+
+- `bug` (https://github.com/primer/octicons/pull/543)
+- `multi-select` (https://github.com/primer/octicons/pull/534)
+
+### 💅 Enhancements
+
+- Make octicon helper slightly faster (@jhawthorn & @seejohnrun) (#536)
+
+### 💥 Breaking changes
+
+- Rename 16px `trashcan` icon to `trash` (@fermion 🙇) (https://github.com/primer/octicons/pull/538)
+
+### 🧽Chores
+
+- Dependency updates (#525, #524, #523, #522, #520)
+
+## 11.3.0
+
+### 🚀 New Features
+
+- `number` (https://github.com/primer/octicons/pull/541)
+- `video` (https://github.com/primer/octicons/pull/540)
+
+### 🐛 Fixes
+
+- Fix rendering of arrows in Safari (@aaronshekey https://github.com/primer/octicons/pull/527)
+
+## 11.2.0
+
+### 🚀 New Features
+
+- `strikethrough` (https://github.com/primer/octicons/pull/518)
+
+### 🐛 Fixes
+
+- Align `plus` and `dash` icon (https://github.com/primer/octicons/pull/447)
+- Small edits in JS documentation (https://github.com/primer/octicons/pull/499)
+
+### 🧽Chores
+
+- Dependency updates
+
+## 11.1.0
+
+### 🚀 New Features
+
+- `container` (https://github.com/primer/octicons/pull/507)
+- `squirrel` 24px icon (https://github.com/primer/octicons/pull/508)
+
+### 🐛 Fixes
+
+- Corrected stroke for 24px `smiley` (https://github.com/primer/octicons/pull/509)
+
+## 11.0.0
+
+### 💅 Enhancements
+
+- Cache retrieval of Octicon SVG paths (https://github.com/primer/octicons/pull/491)
+
+### 💥 Breaking changes
+
+- Fix 24px icon names https://github.com/primer/octicons/pull/465 (@BenJetson 🙇)
+  - `unverifed-24.svg` → `unverified-24.svg`
+  - `file-symlink-24.svg` → `file-symlink-file-24.svg`
+  - `fire-24.svg` → `flame-24.svg`
+  - `eye-slash-24.svg` → `eye-closed-24.svg`
+- Remove 24px `settings` icon. Use `gear` instead https://github.com/primer/octicons/pull/493
+
+## 10.1.0
+
+### 🚀 New Features
+
+- [`arrow-switch`](https://github.com/primer/octicons/pull/486)
+- [`file-badge`](https://github.com/primer/octicons/pull/464)
+- [`x-circle`, `x-circle-fill`, `circle`](https://github.com/primer/octicons/pull/455)
+
+### 🐛 Fixes
+
+- Corrected positioning for `triangle-down` [#459](https://github.com/primer/octicons/pull/459)
+
+### 🧽Chores
+
+- Dependency updates
+
+## 10.0.0
+
+### All packages
+
+- We've given Octicons a new look ✨ Some icons have new names and some icons haven't been redesigned yet. The following table documents those changes. If you're using an octicon in v9.x that doesn't have an equivelent in v10.0 yet, let us know by [opening an issue](https://github.com/primer/octicons/issues/new?assignees=&labels=icon+request&template=icon-request.md&title=%5BIcon+request%5D).
+
+| v9.x                     | v10.0                     | Notes                                                                                                                                               |
+| ------------------------ | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `arrow-small-down`       | `arrow-down`              |                                                                                                                                                     |
+| `arrow-small-left`       | `arrow-left`              |                                                                                                                                                     |
+| `arrow-small-right`      | `arrow-right`             |                                                                                                                                                     |
+| `arrow-small-up`         | `arrow-up`                |                                                                                                                                                     |
+| `browser`                |                           | [Request this icon](https://github.com/primer/octicons/issues/new?assignees=&labels=icon+request&template=icon-request.md&title=%5BIcon+request%5D) |
+| `bug`                    |                           | [Request this icon](https://github.com/primer/octicons/issues/new?assignees=&labels=icon+request&template=icon-request.md&title=%5BIcon+request%5D) |
+| `circuit-board`          | `cpu`                     |                                                                                                                                                     |
+| `cloud-download`         | `download`                |                                                                                                                                                     |
+| `cloud-upload`           | `upload`                  |                                                                                                                                                     |
+| `dashboard`              | `meter`                   |                                                                                                                                                     |
+| `dependent`              | `package-dependents`      |                                                                                                                                                     |
+| `device-camera`          |                           | [Request this icon](https://github.com/primer/octicons/issues/new?assignees=&labels=icon+request&template=icon-request.md&title=%5BIcon+request%5D) |
+| `file-pdf`               | `file`                    |                                                                                                                                                     |
+| `file-symlink-directory` | `file-submodule`          |                                                                                                                                                     |
+| `gist-secret`            | `lock`                    |                                                                                                                                                     |
+| `gist`                   | `code-square`             |                                                                                                                                                     |
+| `github-action`          |                           | [Request this icon](https://github.com/primer/octicons/issues/new?assignees=&labels=icon+request&template=icon-request.md&title=%5BIcon+request%5D) |
+| `heart-outline`          | `heart`                   |                                                                                                                                                     |
+| `internal-repo`          | `repo`                    |                                                                                                                                                     |
+| `jersey`                 | `people`                  |                                                                                                                                                     |
+| `keyboard`               |                           | [Request this icon](https://github.com/primer/octicons/issues/new?assignees=&labels=icon+request&template=icon-request.md&title=%5BIcon+request%5D) |
+| `line-arrow-down`        | `arrow-down`              |                                                                                                                                                     |
+| `line-arrow-left`        | `arrow-left`              |                                                                                                                                                     |
+| `line-arrow-right`       | `arrow-right`             |                                                                                                                                                     |
+| `line-arrow-up`          | `arrow-up`                |                                                                                                                                                     |
+| `mail-read`              | `mail`                    |                                                                                                                                                     |
+| `no-newline`             | `no-entry`                |                                                                                                                                                     |
+| `paintcan`               | `paintbrush`              |                                                                                                                                                     |
+| `plus-small`             | `plus`                    |                                                                                                                                                     |
+| `primitive-dot-stroke`   | `dot`                     |                                                                                                                                                     |
+| `primitive-dot`          | `dot-fill`                |                                                                                                                                                     |
+| `primitive-square`       | `square-fill`             |                                                                                                                                                     |
+| `radio-tower`            | `broadcast`               |                                                                                                                                                     |
+| `repo-clone`             |                           | [Request this icon](https://github.com/primer/octicons/issues/new?assignees=&labels=icon+request&template=icon-request.md&title=%5BIcon+request%5D) |
+| `repo-force-push`        | `repo-push`               |                                                                                                                                                     |
+| `repo-pull`              |                           | [Request this icon](https://github.com/primer/octicons/issues/new?assignees=&labels=icon+request&template=icon-request.md&title=%5BIcon+request%5D) |
+| `repo-template-private`  |                           | [Request this icon](https://github.com/primer/octicons/issues/new?assignees=&labels=icon+request&template=icon-request.md&title=%5BIcon+request%5D) |
+| `request-changes`        | `diff`                    |                                                                                                                                                     |
+| `saved`                  | `bookmark`                |                                                                                                                                                     |
+| `text-size`              | `heading` or `typography` |                                                                                                                                                     |
+| `unsaved`                | `bookmark-slash`          |                                                                                                                                                     |
+| `watch`                  | `hourglass`               |                                                                                                                                                     |
+| `workflow-all`           |                           | [Request this icon](https://github.com/primer/octicons/issues/new?assignees=&labels=icon+request&template=icon-request.md&title=%5BIcon+request%5D) |
+
+- We designed a set of 24px icons—as well as 16px icons—to accommodate interfaces that need larger icons. All package implementations now choose which SVG to render based on the size passed in.
+
+### React (@primer/octicons-react)
+
+- Icon components (e.g. `AlertIcon`, `ArrowRightIcon`, etc.) now accept `size`, `ariaLabel`, `verticalAlign`, and `className` props and can be used on their own. No need to pass them to the `Octicon` component.
+
+  ```jsx
+  <AlertIcon size={24} />
+  ```
+
+- Icon components will now choose the best SVG icon to render based on the `size` passed in.
+
+- The `Octicon` component is deprecated. Use icon components on their own instead:
+
+  ```diff
+  - <Octicon icon={AlertIcon} />
+  + <AlertIcon />
+  ```
+
+#### BREAKING CHANGES 💥
+
+- All icon component names now include `Icon` at the end (e.g. `Alert` → `AlertIcon`).
+
+- In order to enable tree-shaking, we removed the `iconsByName` and `getIconByName` exports.
+
+- `Octicon` no longer accepts `width` or `height` props. Use the `size` prop instead. In cases where the width and height of an icon are not equal (e.g. logos), the height will be set to the value of the `size` prop and the `width` will be scaled proportionally.
+
+- We renamed the `ariaLabel` prop to `aria-label` to be consistent with React: https://reactjs.org/docs/accessibility.html#wai-aria
+
+  ```diff
+  - <AlertIcon ariaLabel="alert">
+  + <AlertIcon aria-label="alert">
+  ```
+
+- Setting `verticalAlign="top"` on the `Octicon` component or any icon component will now apply a `vertical-align: top;` style to the `<svg>`. Previously, we were translating "top" to "text-top." So setting `verticalAlign="top"` would apply a `vertical-align: text-top;` style to the `<svg>`. If you want a vertical alignment of "text-top," set the `verticalAlign` prop to `"text-top"`.
+
+- Custom icon components passed to the `Octicon` component now need to render the entire `<svg>`, not just the `<path>`.
+
+```diff
+function CirclesIcon() {
+  return (
+-   <React.Fragment>
++   <svg viewBox="0 0 30 10" width="30" height="10">
+      <circle r={5} cx={5} cy={5}/>
+      <circle r={5} cx={15} cy={5}/>
+      <circle r={5} cx={25} cy={5}/>
+-   </React.Fragment>
++   </svg>
+  )
+}
+
+- CirclesIcon.size = [30, 10]
+```
+
+### JavaScript (@primer/octicons)
+
+#### BREAKING CHANGES 💥
+
+- The structure of each icon object has been updated to allow support multiple SVGs per icon:
+
+##### Before
+
+```js
+octicons.alert
+// {
+//     symbol: 'alert',
+//     keywords: ['warning', 'triangle', 'exclamation', 'point'],
+//     toSVG: [Function],
+//     width: 16,
+//     height: 16,
+//     path: '<path d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/>',
+//     options: {
+//         version: '1.1',
+//         width: '16',
+//         height: '16',
+//         viewBox: '0 0 16 16',
+//         class: 'octicon octicon-alert',
+//         'aria-hidden': 'true'
+//     },
+// }
+```
+
+#### After
+
+```js
+octicons.alert
+// {
+//     symbol: 'alert',
+//     keywords: ['warning', 'triangle', 'exclamation', 'point'],
+//     toSVG: [Function]
+//     heights: {
+//         16: {
+//             width: 16,
+//             path: '<path d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/>',
+//             options: {
+//                 version: '1.1',
+//                 width: '16',
+//                 height: '16',
+//                 viewBox: '0 0 16 16',
+//                 class: 'octicon octicon-alert',
+//                 'aria-hidden': 'true'
+//             },
+//         },
+//         24: ...
+//     }
+// }
+```
+
+## 9.6.0
+
+### Features
+
+- New icon `north-star` https://github.com/primer/octicons/pull/380
+
+## 9.5.0
+
+### Features
+
+- New icon `internal-repo` https://github.com/primer/octicons/pull/375
+
+## 9.4.0
+
+### Features
+
+- New icons `heart-outline` `infinity` `line-arrow-up` `line-arrow-down` `line-arrow-right` `line-arrow-left` https://github.com/primer/octicons/pull/365
+
+### Chores
+
+- Contributing docs updates and issue template updates #367
+
+### Bugs
+
+- Update `heart` glyphs removing extra points https://github.com/primer/octicons/pull/365
+
+## 9.3.1
+
+### Bugfix
+
+- Workflow icon had a cutoff edge.
+
+## 9.3.0
+
+### 🚀 New Features
+
+- Workflow icons https://github.com/primer/octicons/pull/356 @ashygee
+- Allow 'unset' value for verticalAlign property https://github.com/primer/octicons/pull/354 @Fs00
+
+## 9.2.0
+
+### 🚀 New features
+
+- [x] New icons for save/unsave and primitive dot stroke https://github.com/primer/octicons/pull/351 @ashygee @colinkeany
+
+### 🧽 Chores
+
+- [x] Migrating to new yml actions syntax https://github.com/primer/octicons/pull/332 @max & @jonrohan
+- [x] Update jekyll gemspec to support Jekyll 4.0 https://github.com/primer/octicons/pull/347 @ntotten
+
+### 🐛 Bugs
+
+- [x] Octicons react isn't including className https://github.com/primer/octicons/pull/271 @pocke
+
+## 9.1.1
 
 ### :bug: Bug Fix
 
 - [x] renamed the original shield icon to `shield-lock` https://github.com/primer/octicons/issues/323 @ashygee
 - [x] test for duplicate icons https://github.com/primer/octicons/pull/322 @jonrohan
 
-# 9.1.0
+## 9.1.0
 
 ### 🚀 New features
 
 - [x] Adding skip icon https://github.com/primer/octicons/pull/318 @ashygee
 
-# 9.0.0
+## 9.0.0
 
 ### 💥 Breaking changes
+
 - [x] Rename `octicons` to `@primer/octicons` https://github.com/primer/octicons/pull/311
 - [x] Rename `@githubprimer/octicons-react` to `@primer/octicons-react` https://github.com/primer/octicons/pull/311
 
@@ -22,57 +390,62 @@
 - [x] Adding a shield icon https://github.com/primer/octicons/pull/310 @ashygee @donokuda
 - [x] Adding new repo icons https://github.com/primer/octicons/issues/316 @superbryntendo
 
-# 8.5.0
+## 8.5.0
 
 - a11y aria-hidden update from @muan https://github.com/primer/octicons/pull/295
 - Verified icons poor rendering. @ashygee https://github.com/primer/octicons/pull/297
 - Docs update for contributing @ashygee https://github.com/primer/octicons/pull/298
 
-# 8.4.2
+## 8.4.2
 
 ### :art: Enhancement
+
 - Thumbs up/down icons needed some vector improvements. https://github.com/primer/octicons/pull/287
 
 ### :bug: Bug Fix
+
 - Node package missing `build/build.css` file. https://github.com/primer/octicons/pull/292
 
-# 8.4.1
+## 8.4.1
 
 ### :bug: Bug Fix
+
 - Rollup files missing from octicons react package https://github.com/primer/octicons/issues/282
 
-# 8.4.0
+## 8.4.0
 
 ### :house: Internal
+
 - Using Actions to build and deploy Octicons https://github.com/primer/octicons/pull/276
 
 #### Committers: 1
+
 - Jon Rohan ([jonrohan](https://github.com/jonrohan))
 
-# 8.3.0
+## 8.3.0
 
 - New "changes requested" icon https://github.com/primer/octicons/pull/267
 - Contrib Doc Updates https://github.com/primer/octicons/pull/256
 - Updating licenses to 2019 https://github.com/primer/octicons/pull/272
 
-# 8.2.0
+## 8.2.0
 
 - Add `fold-up` and `fold-down` icons, courtesy of @pmarsceill
 
-# 8.1.3
+## 8.1.3
 
 - Add `eye-closed` icon, courtesy of @colinkeany
 
-# 8.1.2
+## 8.1.2
 
 - Patch release for failed 8.1.1 release
 
-# 8.1.1
+## 8.1.1
 
 - Fix for `list-ordered` icon https://github.com/primer/octicons/pull/252
 - In React Octicons, we set aria-hidden to false if there's an aria-label provided
 
-# 8.1.0
+## 8.1.0
 
 - Add the `arrow-both` icon courtesy of @venetucci
 - TypeScript types are now available thanks to @j-f1!
@@ -81,25 +454,25 @@
 - Update README with `@githubprimer/octicons-react scope`
 - Publish release candidates from any branch beginning with `release`
 
-# 8.0.0
+## 8.0.0
 
 - Breaking changes in `octicons_react` [#225](https://github.com/primer/octicons/pull/225)
 - After the initial release of octicons_react https://github.com/primer/octicons/releases/tag/v7.4.0, we needed to rename the scope of the package. Due to some deployment conflicts in our pipelines.
 
-# 7.4.0
+## 7.4.0
 
 - This release marks the first official version of Octicons for React! Check out the `@github/octicons-react` package on npm for more info, or peruse the long-running PR [#222](https://github.com/primer/octicons/pull/222).
 - CI status is now reported to the `#design-ops` Slack channel
 - Jekyll Octicons has moved in this repo from `lib/jekyll-octicons` to `lib/octicons_jekyll`
 
-# 7.3.0
+## 7.3.0
 
 - Fix for heart icon https://github.com/primer/octicons/pull/211
 - Adding an archive icon created by @colinkeany
 - Fixes https://github.com/primer/octicons/issues/182
 - Fixed versioning strategy https://github.com/primer/octicons/pull/#208
 
-# Archived releases
+## Archived releases
 
 ### Octicons_node 7.0.0
 
@@ -296,7 +669,6 @@ Removes
 
 - `screen-normal`
 - `screen-full`
-
 
 ### 3.1.0 (August 13, 2015)
 
